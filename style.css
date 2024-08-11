@@ -370,10 +370,35 @@ footer{
    .feature-image img {
     display: none;
    }
+
+   .feature-image,
+   .infrastructure-image,
+   .free-open-image {
+    margin-top: 20px;
+   }
+
+   footer{
+    padding: 20px;
+   }
+
+   .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+   }
+
+   .footer-links {
+    flex-direction: column;
+    gap: 10px;
+   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
     .feature-image-2 img {
+        display: none;
+    }
+
+    .infrastructure-image img .mobile-view{
         display: none;
     }
 }
