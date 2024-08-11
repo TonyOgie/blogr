@@ -145,7 +145,7 @@ section.features{
     font-size: 2em;
     color: hsl(237, 17%, 21%);
     text-align: center;
-    padding-left: 250px;
+    /*padding-left: 250px;*/
     font-family: "Ubuntu";
     font-weight: 500;
 }
@@ -357,4 +357,23 @@ footer{
     font-size: 1em;
     margin-bottom: 20px;
    }
+
+   /* features section*/
+
+   section.features,
+   section.infrastructure,
+   section.free-open{
+    flex-direction: column;
+    padding: 20px;
+   }
+
+   .feature-image img {
+    display: none;
+   }
+}
+
+@media screen and (min-width: 768px) {
+    .feature-image-2 img {
+        display: none;
+    }
 }
