@@ -197,6 +197,7 @@ section.infrastructure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     height: 250px;
 }
 
@@ -323,7 +324,7 @@ footer{
     text-decoration: none;
     font-size: 0.9em;
     font-family: "Ubuntu";
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .footer-links ul li a:hover {
@@ -336,7 +337,6 @@ footer{
     padding: 0;
     width: 100%;
    }
-
 
    header.hero {
     padding: 20px;
@@ -358,7 +358,6 @@ footer{
     margin-bottom: 20px;
    }
 
-   /* features section*/
 
    section.features,
    section.infrastructure,
@@ -371,7 +370,18 @@ footer{
     display: none;
    }
 
-   .feature-image,
+   .mobile-view img {
+    max-width: 100%;
+    height: auto;
+   }
+
+   .feature-image-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   }
+
+   .feature-image-2,
    .infrastructure-image,
    .free-open-image {
     margin-top: 20px;
@@ -391,14 +401,60 @@ footer{
     flex-direction: column;
     gap: 10px;
    }
+
+   h3{
+    margin-left: 100px;
+   }
+
+   section.features {
+    padding-bottom: 200px;
+   }
+
+   
+   .infrastructure-content {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .infrastructure-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/bg-pattern-circles.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 500px;
+   }
+
+   .infrastructure-image img {
+    width: 100%;
+    margin-top: -200px;
+   }
+
+
+   .infrastructure-text {
+    color: white;
+    padding: 50px;
+   }
+
+   .infrastructure-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+   }
+
+   .infrastructure-text p {
+    font-size: 1em;
+    line-height: 1.5;
+   }
 }
 
 @media screen and (min-width: 768px) {
     .feature-image-2 img {
-        display: none;
-    }
-
-    .infrastructure-image img .mobile-view{
         display: none;
     }
 }
